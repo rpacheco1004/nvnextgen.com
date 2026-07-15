@@ -16,3 +16,95 @@ h1,h2{font-family:Georgia,"Times New Roman",serif;line-height:1.03;margin:0}h1{f
 .field-copy{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.field-copy p:last-child{max-width:560px;color:#ddd8cf}
 .contact{text-align:center;background:#000;border-top:1px solid var(--line)}footer{padding:28px 0;color:#8d8982;font-size:12px;background:#000}
 @media(max-width:850px){.nav nav{display:none}.hero-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.field-section,.field-section>img{height:620px}}
+
+
+/* Working With Clients section */
+.clients-section {
+  padding:100px 0;
+  background:#000;
+}
+
+.clients-heading {
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:60px;
+  margin-bottom:45px;
+}
+
+.clients-heading h2 {
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(40px,5vw,62px);
+  line-height:1.05;
+  margin:0;
+}
+
+.clients-heading > p {
+  margin:24px 0 0;
+  color:var(--muted);
+  font-size:17px;
+}
+
+.client-gallery {
+  display:grid;
+  grid-template-columns:1.35fr .65fr;
+  gap:18px;
+}
+
+.client-card {
+  margin:0;
+  position:relative;
+  overflow:hidden;
+  min-height:420px;
+  border:1px solid var(--line);
+  background:#080808;
+}
+
+.client-card img {
+  width:100%;
+  height:100%;
+  min-height:420px;
+  object-fit:cover;
+  display:block;
+  filter:brightness(.78) contrast(1.05);
+  transition:transform .35s ease, filter .35s ease;
+}
+
+.client-card:hover img {
+  transform:scale(1.025);
+  filter:brightness(.9) contrast(1.05);
+}
+
+.client-card figcaption {
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:24px;
+  background:linear-gradient(transparent,rgba(0,0,0,.95));
+}
+
+.client-card strong {
+  display:block;
+  color:var(--gold2);
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:12px;
+  margin-bottom:6px;
+}
+
+.client-card span {
+  color:#ddd7ce;
+  font-size:14px;
+}
+
+@media(max-width:850px) {
+  .clients-heading,
+  .client-gallery {
+    grid-template-columns:1fr;
+  }
+
+  .client-card,
+  .client-card img {
+    min-height:360px;
+  }
+}
