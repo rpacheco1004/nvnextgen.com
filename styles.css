@@ -190,3 +190,13 @@ footer {
 .trust-strip {
   background:#080808 !important;
 }
+
+
+/* Chevrolet replacement for the Nevada-based field section */
+.field-section > img {
+  width:100%;
+  height:520px;
+  object-fit:cover;
+  object-position:center 42%;
+  filter:brightness(.68) contrast(1.12) saturate(.9);
+}
