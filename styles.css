@@ -57,21 +57,17 @@ footer{padding:28px 0;color:#8e8981;font-size:12px}.footer-inner{display:flex;ju
 @media(max-width:600px){.trust-strip,.industry-grid,.process-grid{grid-template-columns:1fr}.client-points{grid-template-columns:1fr}.section{padding:78px 0}}
 
 
-/* Clean Trail Boss section — full truck, no vehicle wording */
+/* Full, uncropped Trail Boss section */
 .truck-section {
   padding:90px 0;
-  background:
-    linear-gradient(rgba(201,153,53,.04) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(201,153,53,.04) 1px,transparent 1px),
-    #000;
-  background-size:42px 42px;
+  background:#000;
   border-top:1px solid rgba(201,153,53,.22);
   border-bottom:1px solid rgba(201,153,53,.22);
 }
 
 .truck-layout {
   display:grid;
-  grid-template-columns:.75fr 1.25fr;
+  grid-template-columns:.72fr 1.28fr;
   gap:50px;
   align-items:center;
 }
@@ -91,16 +87,15 @@ footer{padding:28px 0;color:#8e8981;font-size:12px}.footer-inner{display:flex;ju
 .truck-image {
   border:1px solid rgba(201,153,53,.35);
   background:#000;
-  padding:14px;
-  overflow:hidden;
+  padding:18px;
 }
 
 .truck-image img {
   width:100%;
   height:auto;
+  display:block;
   object-fit:contain;
   object-position:center;
-  display:block;
   background:#000;
 }
 
