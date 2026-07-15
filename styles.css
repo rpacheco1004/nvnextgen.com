@@ -56,51 +56,8 @@ footer{padding:28px 0;color:#8e8981;font-size:12px}.footer-inner{display:flex;ju
 @media(max-width:900px){.desktop-nav,.nav-cta{display:none}.menu-btn{display:block}.hero-grid,.section-heading,.client-grid,.about-grid{grid-template-columns:1fr}.trust-strip{grid-template-columns:1fr 1fr}.industry-grid,.process-grid{grid-template-columns:1fr 1fr}.service-grid{grid-template-columns:1fr}}
 @media(max-width:600px){.trust-strip,.industry-grid,.process-grid{grid-template-columns:1fr}.client-points{grid-template-columns:1fr}.section{padding:78px 0}}
 
-
-/* Full, uncropped Trail Boss section */
-.truck-section {
-  padding:90px 0;
-  background:#000;
-  border-top:1px solid rgba(201,153,53,.22);
-  border-bottom:1px solid rgba(201,153,53,.22);
-}
-
-.truck-layout {
-  display:grid;
-  grid-template-columns:.72fr 1.28fr;
-  gap:50px;
-  align-items:center;
-}
-
-.truck-copy h2 {
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(42px,5vw,64px);
-  line-height:1.03;
-  margin:0;
-}
-
-.truck-copy p:last-child {
-  color:#aaa49b;
-  font-size:17px;
-}
-
-.truck-image {
-  border:1px solid rgba(201,153,53,.35);
-  background:#000;
-  padding:18px;
-}
-
-.truck-image img {
-  width:100%;
-  height:auto;
-  display:block;
-  object-fit:contain;
-  object-position:center;
-  background:#000;
-}
-
-@media(max-width:900px) {
-  .truck-layout {
-    grid-template-columns:1fr;
-  }
-}
+.truck-section{padding:90px 0;background:#000;border-top:1px solid rgba(201,153,53,.25);border-bottom:1px solid rgba(201,153,53,.25)}
+.truck-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:50px;align-items:center}
+.truck-image{background:#000;border:1px solid rgba(201,153,53,.35);padding:14px}
+.truck-image img{width:100%;height:auto;display:block;object-fit:contain}
+@media(max-width:900px){.truck-layout{grid-template-columns:1fr}}
