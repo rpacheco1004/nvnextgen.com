@@ -100,10 +100,35 @@ footer{padding:28px 0;color:#8e8981;font-size:12px}
 }
 
 
-/* Lower Nevada-based section: Chevrolet Trail Boss replacement only */
+/* Clean top hero: logo only */
+.gold-frame img {
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  background:#000;
+}
+
+/* Lower Nevada-based section: show the full Chevrolet without cutting it off */
+.field-section {
+  min-height:560px;
+  background:#000;
+}
+
 .field-section > img {
   width:100%;
-  height:520px;
-  object-fit:cover;
-  object-position:center 44%;
+  height:560px;
+  object-fit:contain;
+  object-position:center;
+  background:#000;
+  filter:brightness(.72) contrast(1.08);
+}
+
+.field-overlay {
+  background:linear-gradient(
+    90deg,
+    rgba(0,0,0,.94) 0%,
+    rgba(0,0,0,.62) 42%,
+    rgba(0,0,0,.12) 72%,
+    rgba(0,0,0,.05) 100%
+  );
 }
