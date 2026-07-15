@@ -108,3 +108,47 @@ h1,h2{font-family:Georgia,"Times New Roman",serif;line-height:1.03;margin:0}h1{f
     min-height:360px;
   }
 }
+
+
+/* Smaller multi-image consulting gallery */
+.compact-gallery {
+  display:grid !important;
+  grid-template-columns:repeat(3,1fr) !important;
+  gap:16px !important;
+}
+
+.compact-gallery .client-card {
+  min-height:260px !important;
+  aspect-ratio:4/3;
+}
+
+.compact-gallery .client-card img {
+  min-height:0 !important;
+  height:100% !important;
+  object-fit:cover !important;
+}
+
+.compact-gallery .client-card figcaption {
+  padding:18px !important;
+}
+
+.compact-gallery .client-card strong {
+  font-size:11px !important;
+}
+
+.compact-gallery .client-card span {
+  font-size:12px !important;
+  line-height:1.4;
+}
+
+@media(max-width:900px) {
+  .compact-gallery {
+    grid-template-columns:repeat(2,1fr) !important;
+  }
+}
+
+@media(max-width:560px) {
+  .compact-gallery {
+    grid-template-columns:1fr !important;
+  }
+}
