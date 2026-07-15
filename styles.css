@@ -98,3 +98,56 @@ footer{padding:28px 0;color:#8e8981;font-size:12px}
   .field-section,.field-section>img{height:590px}
   .field-overlay{background:linear-gradient(180deg,rgba(5,5,5,.75),rgba(5,5,5,.68))}
 }
+
+
+/* All-black visual update */
+body,
+.site-header,
+.hero,
+.services,
+.process,
+.contact,
+footer {
+  background-color:#000 !important;
+}
+
+.hero {
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.98) 0%,rgba(0,0,0,.92) 46%,rgba(0,0,0,.72) 100%),
+    #000 !important;
+}
+
+.gold-frame {
+  padding:0;
+  border:1px solid rgba(200,154,53,.45);
+  background:#000;
+  overflow:hidden;
+}
+
+.gold-frame img {
+  width:100%;
+  aspect-ratio:16/10;
+  object-fit:cover;
+  object-position:center;
+}
+
+.field-section {
+  background:#000;
+}
+
+.field-section>img {
+  object-fit:cover;
+  object-position:center;
+  filter:brightness(.74) contrast(1.08);
+}
+
+.field-overlay {
+  background:linear-gradient(90deg,rgba(0,0,0,.96) 0%,rgba(0,0,0,.72) 48%,rgba(0,0,0,.25) 100%);
+}
+
+.service-card,
+.quote-panel,
+.process-step,
+.trust-strip {
+  background:#080808 !important;
+}
