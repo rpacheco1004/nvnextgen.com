@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="NextGen Consulting Group provides project management, project controls, construction consulting, and Nevada notary services.">
   <title>NextGen Consulting Group | Nevada</title>
+  <link rel="icon" href="assets/nextgen-logo.jpg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,121 +13,200 @@
   <div class="shell nav">
     <a class="brand" href="#top">
       <span class="brand-mark">NG</span>
-      <span><strong>NEXTGEN</strong><small>CONSULTING GROUP</small></span>
+      <span class="brand-copy"><strong>NEXTGEN</strong><small>CONSULTING GROUP</small></span>
     </a>
-    <nav>
+    <nav class="desktop-nav">
       <a href="#services">Services</a>
+      <a href="#industries">Industries</a>
       <a href="#clients">Clients</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
+    <a class="nav-cta" href="#contact">Start a Conversation</a>
+    <button class="menu-btn" aria-label="Open navigation" aria-expanded="false">Menu</button>
+  </div>
+  <div class="mobile-nav">
+    <a href="#services">Services</a>
+    <a href="#industries">Industries</a>
+    <a href="#clients">Clients</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
   </div>
 </header>
 
 <main id="top">
   <section class="hero">
+    <div class="blueprint blueprint-one"></div>
+    <div class="blueprint blueprint-two"></div>
     <div class="shell hero-grid">
-      <div class="hero-copy">
+      <div class="hero-copy reveal">
         <p class="kicker">Strategy. Execution. Results.</p>
         <h1>Better control.<br><span>Better outcomes.</span></h1>
-        <p>NextGen Consulting Group helps contractors, owners, and project teams organize complex work, strengthen communication, and keep projects moving.</p>
-        <a class="button" href="#services">Explore Services</a>
+        <p class="hero-text">
+          NextGen Consulting Group helps contractors, owners, and project teams
+          organize complex work, strengthen communication, and keep projects moving.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#services">Explore Services</a>
+          <a class="button button-dark" href="#about">About NextGen</a>
+        </div>
       </div>
-      <div class="logo-panel">
-        <img src="assets/ng-logo-only-v2.jpg" alt="NextGen Consulting Group NG logo">
+      <div class="logo-panel reveal">
+        <img src="assets/nextgen-logo.jpg" alt="NextGen Consulting Group logo">
       </div>
+    </div>
+    <div class="shell trust-strip">
+      <div><strong>Project Management</strong><span>Planning through closeout</span></div>
+      <div><strong>Project Controls</strong><span>Schedule, cost, and reporting</span></div>
+      <div><strong>Construction Consulting</strong><span>Field-driven support</span></div>
+      <div><strong>Nevada Based</strong><span>Local knowledge and experience</span></div>
     </div>
   </section>
 
-  <section class="services" id="services">
+  <section class="services section" id="services">
     <div class="shell">
-      <p class="kicker">Core Services</p>
-      <h2>Practical support for demanding projects.</h2>
-      <div class="cards">
-        <article><h3>Project Management</h3><p>Planning, coordination, documentation, communication, and execution support.</p></article>
-        <article><h3>Project Controls</h3><p>Schedule tracking, progress reporting, cost awareness, and change management.</p></article>
-        <article><h3>Construction Consulting</h3><p>Scope review, field coordination, procurement support, and practical problem solving.</p></article>
-        <article><h3>Nevada Notary Services</h3><p>Professional traditional notary services provided by a commissioned Nevada Notary Public.</p></article>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="clients-section" id="clients">
-    <div class="shell">
-      <div class="clients-heading">
+      <div class="section-heading reveal">
         <div>
-          <p class="kicker">Working With Clients</p>
-          <h2>Hands-on coordination. Clear communication.</h2>
+          <p class="kicker">Core Services</p>
+          <h2>Practical support for demanding projects.</h2>
         </div>
         <p>
-          NextGen works directly with clients, project teams, contractors, and stakeholders
-          to understand field conditions, review project information, and keep decisions moving.
+          From early planning through closeout, NextGen brings structure, visibility,
+          and accountability to the work that matters most.
         </p>
       </div>
 
-      <div class="client-gallery compact-gallery">
-        <figure class="client-card">
-          <img src="assets/plan-review.jpg" alt="Reviewing plans and project information with a client">
-          <figcaption><strong>Plan Review</strong><span>Clarifying scope, drawings, and next steps.</span></figcaption>
-        </figure>
-
-        <figure class="client-card">
-          <img src="assets/client-discussion.jpg" alt="Construction consultant discussing project requirements with a client">
-          <figcaption><strong>Client Representation</strong><span>Keeping priorities clear and decisions documented.</span></figcaption>
-        </figure>
-
-        <figure class="client-card">
-          <img src="assets/field-walkthrough.jpg" alt="Construction consultant conducting a field walkthrough">
-          <figcaption><strong>Field Walkthroughs</strong><span>Reviewing conditions directly where the work happens.</span></figcaption>
-        </figure>
-
-        <figure class="client-card">
-          <img src="assets/onsite-coordination.jpg" alt="Onsite project coordination with client representatives">
-          <figcaption><strong>Onsite Coordination</strong><span>Aligning teams, field needs, and project expectations.</span></figcaption>
-        </figure>
-
-        <figure class="client-card">
-          <img src="assets/field-operations.jpg" alt="NextGen Consulting Group field operations">
-          <figcaption><strong>Project Support</strong><span>Practical support built around active construction work.</span></figcaption>
-        </figure>
-
-        <figure class="client-card">
-          <img src="assets/strategy-results.jpg" alt="NextGen Consulting Group strategy execution and results branding">
-          <figcaption><strong>Strategy and Results</strong><span>Organized execution focused on measurable outcomes.</span></figcaption>
-        </figure>
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <span class="service-number">01</span>
+          <div class="service-icon icon-pm"></div>
+          <h3>Project Management</h3>
+          <p>Planning, coordination, documentation, stakeholder communication, and execution support.</p>
+        </article>
+        <article class="service-card reveal">
+          <span class="service-number">02</span>
+          <div class="service-icon icon-controls"></div>
+          <h3>Project Controls</h3>
+          <p>Schedule tracking, progress reporting, cost awareness, change management, and document control.</p>
+        </article>
+        <article class="service-card reveal">
+          <span class="service-number">03</span>
+          <div class="service-icon icon-consulting"></div>
+          <h3>Construction Consulting</h3>
+          <p>Scope review, field coordination, procurement support, risk awareness, and practical problem solving.</p>
+        </article>
+        <article class="service-card reveal">
+          <span class="service-number">04</span>
+          <div class="service-icon icon-notary"></div>
+          <h3>Nevada Notary Services</h3>
+          <p>Professional traditional notary services provided by a commissioned Nevada Notary Public.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="field-section">
-    <img src="assets/chevy-trailboss-lower-v2.jpg" alt="Black  branded for NextGen Consulting Group">
-    <div class="shade"></div>
-    <div class="shell field-copy">
-      <p class="kicker">Built for the Field</p>
-      <h2>Nevada based.<br>Project focused.</h2>
-      <p>Local knowledge, practical construction experience, and the discipline to keep information organized and decisions moving.</p>
+  <section class="industries section" id="industries">
+    <div class="grid-bg"></div>
+    <div class="shell">
+      <div class="section-heading reveal">
+        <div>
+          <p class="kicker">Industries Served</p>
+          <h2>Experience across active construction environments.</h2>
+        </div>
+        <p>
+          NextGen supports projects where communication, documentation, coordination,
+          and dependable follow-through are critical.
+        </p>
+      </div>
+      <div class="industry-grid">
+        <div class="industry reveal"><strong>Commercial</strong><span>Tenant improvements, facilities, and occupied spaces</span></div>
+        <div class="industry reveal"><strong>Industrial</strong><span>Production, processing, and infrastructure environments</span></div>
+        <div class="industry reveal"><strong>Municipal</strong><span>Public facilities, schools, and community projects</span></div>
+        <div class="industry reveal"><strong>Utilities</strong><span>Power, distribution, and supporting infrastructure</span></div>
+      </div>
     </div>
   </section>
 
-  <section class="about" id="about">
-    <div class="shell">
-      <p class="kicker">About NextGen</p>
-      <h2>Construction experience with an operations mindset.</h2>
-      <p>NextGen Consulting Group brings experience in project management, operations, logistics, procurement, and client relations.</p>
+  <section class="clients section" id="clients">
+    <div class="shell client-grid">
+      <div class="client-photo reveal">
+        <img src="assets/working-with-client.jpg" alt="NextGen Consulting Group reviewing project information with a client">
+      </div>
+      <div class="client-copy reveal">
+        <p class="kicker">Working With Clients</p>
+        <h2>Hands-on coordination. Clear communication.</h2>
+        <p>
+          NextGen works directly with clients, contractors, engineers, owners, and project teams
+          to review information, understand field conditions, and keep decisions moving.
+        </p>
+        <div class="client-points">
+          <span>Plan and document review</span>
+          <span>Client and stakeholder coordination</span>
+          <span>Field condition verification</span>
+          <span>Clear action-item tracking</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="contact" id="contact">
+  <section class="approach section">
     <div class="shell">
+      <div class="section-heading reveal">
+        <div>
+          <p class="kicker">The NextGen Approach</p>
+          <h2>Strategy first. Execution always.</h2>
+        </div>
+        <p>A disciplined process keeps the project team aligned from the first decision through final delivery.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step reveal"><strong>01</strong><h3>Understand</h3><p>Clarify scope, priorities, constraints, and decision makers.</p></div>
+        <div class="process-step reveal"><strong>02</strong><h3>Organize</h3><p>Build a practical plan for information, schedule, and accountability.</p></div>
+        <div class="process-step reveal"><strong>03</strong><h3>Execute</h3><p>Track progress, surface issues early, and keep communication direct.</p></div>
+        <div class="process-step reveal"><strong>04</strong><h3>Deliver</h3><p>Close the loop with clear documentation and reliable follow-through.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about section" id="about">
+    <div class="shell about-grid">
+      <div class="quote-panel reveal">
+        <p>“Clear communication. Organized execution. Reliable follow-through.”</p>
+        <span>NextGen Consulting Group</span>
+      </div>
+      <div class="about-copy reveal">
+        <p class="kicker">About NextGen</p>
+        <h2>Construction experience with an operations mindset.</h2>
+        <p>
+          NextGen Consulting Group brings experience in project management, operations,
+          logistics, procurement, and client relations. The approach is grounded in the
+          realities of keeping active jobs organized and moving forward.
+        </p>
+        <p>
+          Experience includes commercial, industrial, municipal, and utility projects,
+          with coordination across contractors, suppliers, engineers, owners, and field teams.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact section" id="contact">
+    <div class="shell contact-inner reveal">
       <p class="kicker">Contact</p>
       <h2>Let’s build what comes next.</h2>
       <p>Contact details and project inquiry information will be added soon.</p>
+      <div class="coming-soon">Contact Information Coming Soon</div>
     </div>
   </section>
 </main>
 
-<footer><div class="shell">© <span id="year"></span> NextGen Consulting Group</div></footer>
+<footer>
+  <div class="shell footer-inner">
+    <span>© <span id="year"></span> NextGen Consulting Group</span>
+    <span>Strategy. Execution. Results.</span>
+    <span>nvnextgen.com</span>
+  </div>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
